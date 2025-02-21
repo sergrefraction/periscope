@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Логическая задача</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="layout">
+        <div id="left-column">
+            <div class="center-container">
+                <h1>Логическая задача</h1>
+                <div class="buttons-container">
+                    <button class="save-button" onclick="saveState()">Сохранить</button>
+                    <button class="reset-button" onclick="resetTables()">Сброс</button>
+                </div>
+            </div>
+            <div id="tables-container">
+                <table id="mainTable" class="styled-table"></table>
+                <div id="palette" class="centered"></div> <!-- Палитра перемещена между таблицами -->
+                <table id="secondaryTable" class="styled-table"></table>
+            </div>
+        </div>
+        <div id="right-column">
+            <ul id="conditionsList"></ul>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+}
+
+#layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#left-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.center-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Увеличенное расстояние между кнопками */
+    margin-bottom: 20px;
+}
+
+.save-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.reset-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#tables-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px; /* Уменьшенное расстояние между палитрой и таблицами */
+}
+
+#tables-and-conditions {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+table {
+    margin: 10px; /* Уменьшенное расстояние между таблицами и палитрой */
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 600px;
+}
+
+.styled-table th, .styled-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.styled-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.styled-table tr:hover {
+    background-color: #ddd;
+}
+
+.styled-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #4CAF50;
+    color: white;
+}
+
+#palette {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px 0; /* Уменьшенное расстояние между таблицами и палитрой */
+    width: 100%;
+}
+
+#conditionsList {
+    list-style-type: none;
+    padding: 0;
+    margin-left: 20px;
+}
+
+@media (min-width: 800px) {
+    #layout {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    #right-column {
+        margin-left: 40px; /* Перемещение условий задачи вправо */
+        align-self: flex-start; /* Поднятие условий задачи до уровня заголовка */
+    }
+
+    #tables-and-conditions {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+#conditionsList li {
+    margin: 5px 0;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.color-box {
+    width: 25px;
+    height: 25px;
+    margin: 5px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.selected-color {
+    border: 2px solid blue;
+}
